@@ -1,0 +1,20 @@
+Question 1: What authentication scheme is used by default in Django Rest Framework's browsable API? How is this managed?
+A: Session Authentication. It is managed by the SessionAuthentication class.
+    This class is used by default in the browsable API. 
+
+
+Question 2: What authentication scheme is used by httpie when querying with the -a or --auth option flag?
+A: Basic Authentication. It is managed by the BasicAuthentication class.
+    Username and password are passed in the Authorization header.
+
+
+Question 3: What is the difference between Session Authentication and Token Authentication? How is Token Authentication an improvement over Basic Authentication?
+A: Session Authentication is a stateful authentication scheme. It is managed by the SessionAuthentication class.
+    Token Authentication is a stateless authentication scheme. It is managed by the TokenAuthentication class.
+    Token Authentication is an improvement over Basic Authentication because it is stateless and does not require the user to send their username and password with every request.
+
+Question 4: Provide a high level summary of what happens during an OAuth2 authentication flow. For instance: bitbucket.org > Log In > Log in with Google. What happens when I click "Log in with Google"?
+A: The user is redirected to the OAuth2 provider (Google) to authenticate. The user is then redirected back to the application with an access token. The application then uses the access token to make requests to the OAuth2 provider's API.
+
+Question 5: Please provide a link to your code.
+A: https://github.com/adit333/authentication-lab
